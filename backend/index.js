@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Connect to DB
-mongoose.connect('mongodb+srv://makautorganizer:makautorganizer@cluster0.cfzpvhw.mongodb.net/MakautOrganizer')
+mongoose.connect('mongodb+srv://<Username>:<Password>@cluster0.cfzpvhw.mongodb.net/MakautOrganizer')
     .then(() => {
         console.log('Connected to MongoDB');
     })
